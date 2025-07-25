@@ -1,0 +1,391 @@
+/* === RESET Y BASE === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* === HEADER Y NAV === */
+header {
+  background-color: #783f04;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-coffee-dreams {
+  height: 100px; /* Cambia este valor para ajustar el tamaño */
+  width: auto;  /* Mantiene las proporciones originales */
+  margin-right: 10px;
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  margin-right:auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.9;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* === MAIN === */
+main {
+  flex: 1;
+  padding: 50px 20px;
+  text-align: center;
+  color: #333333;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1.5rem; /*tamano de la fuente de los enlaces*/
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === BIENVENIDA (index.html) === */
+.welcome-text h2 {
+  font-size: 2rem;
+  color: #ebeae8;
+  margin-bottom: 10px;
+}
+
+.welcome-text h3 {
+  font-size: 1.2rem;
+  color: #f5f3f0;
+}
+
+/* === CARRUSEL CENTRADO === */
+.carousel-container {
+  position: relative;
+  width: 80%;  /* Ajusta el ancho del contenedor */
+  height: 350px;  /* Ajusta la altura del contenedor */
+  overflow: hidden;  /* Asegura que las imágenes fuera del cuadro no se vean */
+  margin: 0 auto;  /* Centra el carrusel en la página */
+  border: 2px solid #783f04;  /* Borde del cuadro */
+  border-radius: 80px;  /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Sombra alrededor del carrusel */
+}
+
+/* Animación del carrusel */
+.carousel {
+  display: flex;  /* Organiza las imágenes en una fila */
+  animation: carouselAnimation 30s infinite linear ; /* Bucle infinito de 30s */
+  gap: 10px;
+}
+
+/* Cada imagen en el carrusel */
+.carousel-item {
+  flex: 0 0 auto;
+  width: 33%;  /* Ajusta el ancho de las imágenes */
+  height: 100%;  /* Ocupa el alto del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;  /* Se asegura de que las imágenes ocupen todo el ancho del contenedor */
+  height: auto;  /* Mantiene la proporción de las imágenes */
+  object-fit: contain;  /* Asegura que las imágenes no se recorten ni deformen */
+  transition: opacity 10s ease-in-out;
+  border-radius: 50px;
+}
+
+/* Animación para mover las imágenes */
+@keyframes carouselAnimation {
+  0% { transform: translateX(100%); }   /* Empieza desde la posición inicial */
+  20% { transform: translateX(0); } /* Mueve 100% a la izquierda */
+  40% { transform: translateX(-200%); } /* Mueve 200% a la izquierda */
+  60% { transform: translateX(-300%); } /* Mueve 300% a la izquierda */
+  80% { transform: translateX(-400%); } /* Mueve 400% a la izquierda */
+  90% { transform: translateX(-500%); } /* Mueve 500% a la izquierda (última imagen) */
+  100% { transform: translateX(-100%); } 
+     /* Empieza desde la posición inicial */
+}
+
+/* === Imagen Parpadeante === */
+.parpadeante {
+  position: absolute;
+  top: 70%;  /* Centrado verticalmente */
+  left: 50%;  /* Centrado horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta el centrado */
+  width: 500px;  /* Ajusta el tamaño de la imagen parpadeante */
+  height: auto;
+  opacity: 1;  /* Inicialmente visible */
+  animation: parpadeo 2s infinite;  /* Animación de parpadeo */
+  z-index: 10;  /* Asegura que la imagen parpadeante esté por encima del carrusel */
+}
+
+/* Animación para hacer que la imagen parpadee */
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+/* === SECCION DE PRODUCTOS DESTACADOS === */
+.productos-destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* === SECCION DE BIENVENIDA (hero-content) === */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #2d2d2d;  /* Gris oscuro para un estilo limpio */
+  margin-bottom: 10px;
+  font-weight: 600;  /* Mayor peso para el título principal */
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #f5a623;  /* Naranja cálido para contrastar y llamar la atención */
+  font-weight: 300;  /* Ligero para un estilo más refinado */
+}
+
+
+/* === BIENVENIDA TEXTOS === */
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.welcome-text h2 {
+  font-size: 2rem;
+  color: #2d2d2d;  /* Gris oscuro para un contraste limpio */
+  margin-bottom: 10px;
+}
+
+.welcome-text h3 {
+  font-size: 1.2rem;
+  color: #777777;  /* Gris suave para una mejor legibilidad */
+  font-weight: 400;  /* Normal para evitar que el texto se vea pesado */
+}
+
+/* === PRODUCTOS GRID === */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.producto-cuadro {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.producto-cuadro:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.5);
+}
+
+.producto-cuadro img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: filter 0.3s ease;
+  z-index: 1;
+}
+
+.producto-cuadro:hover img {
+  filter: brightness(0.7);
+}
+
+.producto-texto {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 10px;
+}
+
+
+/* === CAFÉS CLÁSICOS === */
+.cafes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cafe-item {
+  background: white;
+  border: 2px solid #783f04;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  color: #333333;
+}
+
+.cafe-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cafe-item h3 {
+  color: #783f04;
+  margin-bottom: 5px;
+}
+
+.cafe-item p {
+  margin: 5px 0;
+}
+
+.btn-agregar {
+  background-color: #783f04;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+  background-color: #a15412;
+}
+
+
+/* === FORMULARIO DE CONTACTO === */
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  color: #333333;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #783f04;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 6px;
+  border: 2px solid #783f04;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #783f04;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #a15412;
+}
+
+.historia-text {
+  color: #4a2e0c;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.imagenes-historia {
+  display: flex; /* Alinea las imágenes horizontalmente */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 20px; /* Espacio entre las imágenes */
+  margin-top: 20px; /* Espacio entre el texto y las imágenes */
+}
+
+.imagenes-historia img {
+  max-width: 10%; /* Ajusta el tamaño para que las imágenes no se desborden */
+  height: 10%; /* Mantiene la proporción de las imágenes */
+  border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #050504e0;
+  color: white;
+  text-align: center;
+  padding: 12px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 20px;
+}

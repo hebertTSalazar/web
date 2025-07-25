@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>comida - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Comida</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="historia.html">Nuestra Historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="carrito.html" class="carrito-link">
+  🛒 <span id="carrito-cantidad" class="carrito-contador">0</span>
+</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="cafes-grid">
+      <div class="cafe-item">
+        <img src="imag/comida1.jpg" alt="Alitas a la BBQ" />
+        <h3>Alitas a la BBQ</h3>
+        <p>Precio: S/. 15.00</p>
+        <button class="btn-agregar" data-producto="Alitas a la BBQ">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/comida2.jpg" alt="Alitas más papas fritas" />
+        <h3>Alitas más papas fritas</h3>
+        <p>Precio: S/. 20.00</p>
+        <button class="btn-agregar" data-producto="Alitas más papas fritas">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/comida3.jpeg" alt="super anticuhos" />
+        <h3><sub>super anticuhos</sub></h3>
+        <p>Precio: S/. 15.00</p>
+        <button class="btn-agregar" data-producto="super anticuhos">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/comida4.webp" alt="tamales verdes" />
+        <h3>tamales verdes</h3>
+        <p>Precio: S/.3.00 c/u</p>
+        <button class="btn-agregar" data-producto="tamales verdes">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Síguenos en redes sociales: Facebook | Instagram | Twitter</p>
+    <p>También puedes ver nuestra carta digital en WhatsApp: 987 654 125</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

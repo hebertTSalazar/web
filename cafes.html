@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafés Clásicos - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Cafés Clásicos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="historia.html">Nuestra Historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="carrito.html" class="carrito-link">
+  🛒 <span id="carrito-cantidad" class="carrito-contador">0</span>
+</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="cafes-grid">
+      <div class="cafe-item">
+        <img src="imag/cappuccino.jpg" alt="Capuchino" />
+        <h3>Capuchino</h3>
+        <p>Precio: S/. 12.00</p>
+        <button class="btn-agregar" data-producto="Capuchino">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=400&q=80" alt="Americano" />
+        <h3>Americano</h3>
+        <p>Precio: S/. 13.00</p>
+        <button class="btn-agregar" data-producto="Americano">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=400&q=80" alt="Mocca" />
+        <h3>Mocca</h3>
+        <p>Precio: S/. 15.00</p>
+        <button class="btn-agregar" data-producto="Mocca">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="Caramelo" />
+        <h3>Caramelo</h3>
+        <p>Precio: S/.14.00</p>
+        <button class="btn-agregar" data-producto="Caramelo">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Síguenos en redes sociales: Facebook | Instagram | Twitter</p>
+    <p>También puedes ver nuestra carta digital en WhatsApp: 987 654 125</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Productos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="carrito.html" class="carrito-link">
+  🛒 <span id="carrito-cantidad" class="carrito-contador">0</span>
+</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="productos-container">
+      <div class="producto-cuadro" onclick="window.open('cafes.html', '_self')">
+        <img src="imag/americano.jpg" alt="Cafés Clásicos" />
+        <div class="producto-texto">Cafés Clásicos</div>
+      </div>
+      <div class="producto-cuadro" onclick="window.open('Frappe.html', '_self')">
+        <img src="imag/frappe.jpg" alt="Frappes" />
+        <div class="producto-texto">Frappe's</div>
+      </div>
+      <div class="producto-cuadro" onclick="window.open('especiales.html', '_self')">
+        <img src="imag/especiales.jpg" alt="Cafés Especiales" />
+        <div class="producto-texto">Cafés Especiales</div>
+      </div>
+      <div class="producto-cuadro" onclick="window.open('pasteles.html', '_self')">
+        <img src="imag/snaks.jpg" alt="pasteles" />
+        <div class="producto-texto">pasteles</div>
+      </div>
+      
+      <div class="producto-cuadro" onclick="window.open('comida.html', '_self')">
+        <img src="imag/comidas.jpg" alt="comida" />
+        <div class="producto-texto">comida</div>
+      </div>
+
+      <div class="producto-cuadro" onclick="window.open('Jugos.html', '_self')">
+        <img src="imag/jugo.jpg" alt="Jugos" />
+        <div class="producto-texto">Jugos</div>
+      </div>
+      <div class="producto-cuadro" onclick="window.open('bebidas.html', '_self')">
+        <img src="imag/bebidas.jpg" alt="Bebidas" />
+        <div class="producto-texto">Bebidas</div>
+      </div>
+      <div class="producto-cuadro" onclick="window.open('combos.html', '_self')">
+        <img src="imag/combo.jpg" alt="Combos" />
+        <div class="producto-texto">Combos</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Síguenos en redes sociales: Facebook | Instagram | Twitter</p>
+     <p>También puedes ver nuestra carta digital en WhatsApp 927 083 499</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

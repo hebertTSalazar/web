@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafés Especiales - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Cafés Especiales</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="historia.html">Nuestra Historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="carrito.html" class="carrito-link">
+  🛒 <span id="carrito-cantidad" class="carrito-contador">0</span>
+</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="cafes-grid">
+      <div class="cafe-item">
+        <img src="imag/especial1.jpeg" alt="especial1" />
+        <h3>café con arte late</h3>
+        <p>Precio: S/. 16.00</p>
+        <button class="btn-agregar" data-producto="café con arte late">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/especial2.jpg" alt="especial2" />
+        <h3>Café con Leche más Galletas</h3>
+        <p>Precio: S/. 15.00</p>
+        <button class="btn-agregar" data-producto="Café con Leche más Galletas">Agregar al carrito</button>
+
+      </div>
+      <div class="cafe-item">
+        <img src="imag/especial3.jpeg" alt="especial3" />
+        <h3>Americano doble</h3>
+        <p>Precio: S/. 22.00</p>
+        <button class="btn-agregar" data-producto="Americano doble">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/especial4.webp" alt="especial4" />
+        <h3>Café con Leche Bañado en Chocolate</h3>
+        <p>Precio: S/. 13.50</p>
+        <button class="btn-agregar" data-producto="Café con Leche Bañado en Chocolate">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Síguenos en redes sociales: Facebook | Instagram | Twitter</p>
+    <p>También puedes ver nuestra carta digital en WhatsApp: 927 083 499</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

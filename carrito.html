@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito de Compras - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Tu Carrito</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="carrito.html">
+        🛒 <span id="carrito-cantidad"></span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Carrito de compras</h2>
+    <h3>Productos seleccionados:</h3>
+    <ul id="carrito-lista"></ul>
+    <p><strong>Total:</strong> <span id="total">S/. 0.00</span></p>
+    <button id="vaciar-carrito">Vaciar carrito</button>
+
+    <hr>
+
+    <h3>Completa tu pedido:</h3>
+    <form id="formulario-pedido" class="contact-form pedido-form">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="text" name="telefono" placeholder="Tu celular (ej: 987654321)" required />
+      <input type="text" name="comentario" placeholder="Agregar comentario" required />
+
+      <select name="metodo" id="metodo-pago" required>
+        <option value="">Selecciona método de pago</option>
+       
+        <option value="Yape">Yape</option>
+        <option value="Plin">Plin</option>
+        <option value="Contado">Pago al contado</option>
+      </select>
+
+      <button type="submit">Enviar comprobante de pago</button>
+    </form>
+
+    <div id="qr-container" style="display:none; text-align:center; margin-top:2rem;">
+      <h4>Escanea el código QR:</h4>
+      <img id="qr-img" src="" alt="Código QR" style="max-width:300px; border-radius:8px;" />
+      <p id="qr-texto" style="margin-top: 1rem; font-weight: bold;"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Síguenos en: Facebook | Instagram | Twitter</p>
+    <p>Whatsapp: 927 083 499</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

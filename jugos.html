@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jugos - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Jugos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="historia.html">Nuestra Historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="carrito.html" class="carrito-link">
+  🛒 <span id="carrito-cantidad" class="carrito-contador">0</span>
+</a>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="cafes-grid">
+      <div class="cafe-item">
+        <img src="imag/jugo1.jpeg" alt="Jugo de Fresa" />
+        <h3>Jugo de Fresa</h3>
+        <p>Precio: S/. 8.00</p>
+        <button class="btn-agregar" data-producto="Jugo de Fresa">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/jugo2.png" alt="Jugo de Papaya" />
+        <h3>Jugo de Papaya</h3>
+        <p>Precio: S/. 6.00</p>
+        <button class="btn-agregar" data-producto="Jugo de Papaya">Agregar al carrito</button>
+      </div>
+        <div class="cafe-item">
+        <img src="imag/jugo3.jpg" alt="Jugo de Piña" />
+        <h3>Jugo de Piña</h3>
+        <p>Precio: S/. 7.00</p>
+        <button class="btn-agregar" data-producto="Jugo de Piña">Agregar al carrito</button>
+      </div>
+      <div class="cafe-item">
+        <img src="imag/jugo4.jpg" alt="Jugo de Naranja" />
+        <h3>Jugo de Naranja</h3>
+        <p>Precio: S/. 5.00</p>
+        <button class="btn-agregar" data-producto="Jugo de Naranja">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+ 
+    
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Coffee Dreams</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-container"> 
+  <header>
+    <img src="imag/logo1.png" alt="Logo Coffee Dreams" class="logo-coffee-dreams"/>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="historia.html">Nuestra Historia</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="carrito.html" class="carrito-link">
+  🛒 <span id="carrito-cantidad" class="carrito-contador">0</span>
+</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+    <form class="contact-form" action="#" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="celular">Celular:</label>
+      <input type="tel" id="celular" name="celular" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Síguenos en redes sociales: Facebook | Instagram | Twitter</p>
+    <p>También puedes ver nuestra carta digital en WhatsApp: 927 083 499</p>
+
+
+  </footer>
+
+  <script src="script.js" defer></script>
+  </div>
+</body>
+</html>
