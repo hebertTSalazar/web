@@ -395,3 +395,11 @@ footer {
   font-size: 1rem;
   margin-top: 20px;
 }
+footer p, footer h6 {
+  margin: 5px 0;
+}
+
+footer h6 {
+  text-align: right; 
+  margin: 0; 
+}
