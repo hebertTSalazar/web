@@ -89,7 +89,13 @@ nav a:hover {
   margin: 0 auto;  /* Centra el carrusel en la página */
   border: 2px solid #783f04;  /* Borde del cuadro */
   border-radius: 80px;  /* Bordes redondeados */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Sombra alrededor del carrusel */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);  /* Sombra alrededor del carrusel */
+ /* Imagen de fondo */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.6) 100%); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  
 }
 
 /* Animación del carrusel */
